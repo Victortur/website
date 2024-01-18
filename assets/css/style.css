@@ -1,0 +1,246 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+.header .logos_madrid {
+  display: flex;
+  flex-direction: row;
+}
+.header .logos_madrid .tamaño_logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+
+/** BASE */
+/** MAIN */
+button {
+  background-color: white;
+  text-decoration: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 30px;
+}
+
+.posicion_poster {
+  display: flex;
+  justify-content: right;
+}
+.posicion_poster .poster {
+  margin: 30px;
+  margin-bottom: 200px;
+}
+@media (max-width: 1000px) {
+  .posicion_poster .poster {
+    margin: 30px;
+    margin-bottom: 200px;
+    width: 60%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 110px;
+  margin-top: 50px;
+  margin: 10px 40px 10px 40px;
+  padding: 0px;
+}
+@media (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 110px;
+    margin: 10px 40px 10px 40px;
+    padding: 0px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 750px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 110px;
+    margin: 10px 40px 10px 40px;
+    padding: 0px;
+    margin-top: 50px;
+  }
+}
+.grid .shadow {
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  height: auto;
+}
+.grid .shadow .imagen_articulo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.grid .shadow .info_articulo {
+  margin: 10px 10px 10px 10px;
+}
+.grid .shadow .info_articulo .titulo_articulo {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.grid .shadow .info_articulo .nombre {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.grid .shadow .info_articulo .descripción {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.grid .shadow .info_articulo .detalles {
+  display: flex;
+  justify-content: right;
+  font-size: large;
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+/** FOOTER */
+.dos {
+  font-size: large;
+}
+
+.posicion_poster {
+  display: flex;
+  justify-content: right;
+}
+.posicion_poster .poster {
+  margin: 30px;
+  margin-bottom: 200px;
+}
+@media (max-width: 1000px) {
+  .posicion_poster .poster {
+    margin: 30px;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+}
+
+.margenes {
+  padding: 40px;
+}
+.margenes .ordendet1 {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 1000px) {
+  .margenes .ordendet1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.margenes .ordendet1 .fotodet {
+  width: 400px;
+  height: 764px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 80px;
+  box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1000px) {
+  .margenes .ordendet1 .fotodet {
+    width: 90%;
+    height: 464px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+.margenes .ordendet1 .titulodet {
+  font-size: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 1000px) {
+  .margenes .ordendet1 .titulodet {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.margenes .ordendet1 .subtitulodet {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.margenes .ordendet1 .nombreestudet {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.margenes .ordendet2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+@media (max-width: 1000px) {
+  .margenes .ordendet2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+}
+.margenes .ordendet2 .detdesc {
+  width: 60%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 1000px) {
+  .margenes .ordendet2 .detdesc {
+    width: 90%;
+  }
+}
+.margenes .ordendet2 .ordendet3 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+@media (max-width: 1000px) {
+  .margenes .ordendet2 .ordendet3 {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+  }
+}
+.margenes .ordendet2 .ordendet3 .curso {
+  display: flex;
+  flex-direction: row;
+}
+.margenes .ordendet2 .ordendet3 .curso .detgmail1 {
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.margenes .info {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.margenes .info .clave {
+  margin-bottom: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */
